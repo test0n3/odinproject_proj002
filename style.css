@@ -1,0 +1,190 @@
+:root {
+  /*header and footer background color*/
+  --dark-background: #1f2937;
+  /*header main text color*/
+  --white-text: #f9faf8;
+  /*header secondary text color*/
+  --blue-white: #e5e7eb;
+  /*button color*/
+  --bluish: #3882f6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 8px 32px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.top,
+footer {
+  background-color: var(--dark-background);
+}
+
+.top header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top header h1 {
+  font-size: 24px;
+  color: var(--white-text);
+}
+
+.top nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+.top nav a {
+  font-size: 18px;
+  color: var(--blue-white);
+  text-decoration: none;
+}
+
+.top .top-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 0;
+}
+
+.top .top-content .right {
+  width: 522px;
+  height: 237px;
+  background-image: url("images/eberhard-grossgasteiger-oXlnrnfiH_M-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right center;
+}
+
+.top .top-content .left {
+  width: 449px;
+}
+
+.top .top-content .left .title {
+  color: var(--white-text);
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.top .top-content .left .content {
+  color: var(--blue-white);
+}
+
+.top .top-content .left button {
+  background-color: var(--bluish);
+}
+
+.gallery .gallery-title {
+  color: var(--dark-background);
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.gallery .gallery-collection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 112px;
+}
+
+.gallery .gallery-collection a {
+  text-decoration: none;
+}
+
+.gallery .gallery-collection img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border: 4px solid var(--bluish);
+  border-radius: 8px;
+}
+
+.gallery .gallery-collection a:hover img {
+  width: 168px;
+  height: 168px;
+  border: hidden;
+}
+
+.gallery .gallery-collection figure figcaption {
+  font-size: 14px;
+  text-align: center;
+  width: 160px;
+  color: var(--dark-background);
+  margin-top: 8px;
+}
+
+.quote {
+  background-color: var(--blue-white);
+}
+
+.quote .quote-content {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+  padding: 128px;
+}
+
+.quote .quote-content a {
+  text-decoration: none;
+  color: var(--dark-background);
+}
+
+.quote .quote-author {
+  display: block;
+  margin: 0;
+  text-align: right;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-action {
+  padding: 100px 0;
+}
+
+.user-action .card {
+  border-radius: 8px;
+  background-color: var(--bluish);
+  color: var(--white-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 112px;
+}
+
+.user-action .card .card-content .card-title {
+  font-weight: bolder;
+  font-size: 32px;
+  margin: 0;
+}
+
+.user-action .user-button {
+  background-color: var(--bluish);
+  border: 2px solid var(--blue-white);
+  color: var(--white-text);
+}
+
+footer {
+  color: var(--white-text);
+  font-size: 16px;
+  text-align: center;
+  padding: 40px 0;
+}
